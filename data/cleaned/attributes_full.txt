@@ -1,91 +1,86 @@
-                     file               attribute data_type  nulls  unique                                  example
-  categories_filtered.csv           category_name       str      0    1292   Acid-Free & Archival Page Photo Albums
-     category_summary.csv           category_name       str      0    1864                                   Abayas
-     category_summary.csv           product_count     int64      0      65                                        3
-     category_summary.csv           average_price   float64      0    1075                                    20.83
-     category_summary.csv           minimum_price   float64      0     845                                     7.99
-     category_summary.csv           maximum_price   float64      0    1001                                    39.49
-     category_summary.csv          average_rating   float64    447     113                                     4.64
-     category_summary.csv           total_reviews     int64      0     704                                       88
-     category_summary.csv        average_discount   float64      0    1212                                    50.01
-cleaned_customer_data.csv             Customer_ID     int64      0    8829                                        1
-cleaned_customer_data.csv                    Name       str      0    8339                              Paul Wilson
-cleaned_customer_data.csv                  Gender       str      0       3                                     Male
-cleaned_customer_data.csv                     Age     int64      0      52                                       52
-cleaned_customer_data.csv                    City       str      0       7                                  Kolkata
-cleaned_customer_data.csv             Signup_Date       str      0    1811                               2025-06-26
-cleaned_customer_data.csv          Feedback_Score   float64      0      10                                      1.0
-cleaned_customer_data.csv                   Email       str      0    8829                 peckvictoria@example.com
-cleaned_customer_data.csv            Phone_Number     int64      0    8829                               2131107701
-cleaned_customer_data.csv                 Country       str      0       1                                    India
-       exchange_rates.csv                 rate_id     int64      0   46969                                        1
-       exchange_rates.csv               rate_date       str      0    1540                               2020-10-15
-       exchange_rates.csv           base_currency       str      0       1                                      USD
-       exchange_rates.csv         target_currency       str      0      36                                      ARS
-       exchange_rates.csv                    rate   float64      0   36376                                   77.415
-        order_details.csv         Order_Detail_ID     int64      0   63195                                        1
-        order_details.csv                Order_ID       str      0   30000                                  ORD1001
-        order_details.csv              Product_ID     int64      0    4991                                     3329
-        order_details.csv                Quantity     int64      0       5                                        5
-        order_details.csv              Unit_Price   float64      0    1332                                      5.2
-        order_details.csv             Total_Price   float64      0    3855                                     26.0
-               orders.csv                Order_ID       str      0   30000                                  ORD1001
-               orders.csv             Customer_ID     int64      0    6217                                     1778
-               orders.csv              Order_Date       str      0   29994                      2020-10-15 18:00:17
-               orders.csv            Total_Amount   float64      0    7948                                    42.79
-               orders.csv          Payment_Method       str      0       4                         Cash on Delivery
-               orders.csv          Payment_Status       str      0       3                                     Paid
-               orders.csv            Order_Status       str      0       4                                Delivered
-             payments.csv              payment_id       str      0   30000                               PAY-018832
-             payments.csv                order_id       str      0   30000                                 ORD19832
-             payments.csv          payment_method       str    608       4                            Vodafone Cash
-             payments.csv                  amount   float64      0    7948                                    11.85
-             payments.csv                currency       str      0       1                                      USD
-             payments.csv          payment_status       str      0       6                                     paid
-             payments.csv            payment_date       str      0   29991                      2025-09-28 05:31:42
-             payments.csv          transaction_id       str      0   30000                         TXN-8FA6A06F9387
-       Products_Final.csv              Product_Id     int64      0    5000                                        1
-       Products_Final.csv            Product_Name       str      0    4774                  Retro Y2K Style Bandana
-       Products_Final.csv     Product_Description       str      0    4998 1pc Retro Y2K Style Letter Headband, Str
-       Products_Final.csv           Category_Name       str      0    1292                                 Bandanas
-       Products_Final.csv                   Price   float64      0    1340                                     2.48
-       Products_Final.csv                  Rating   float64   2036     124                                      5.0
-       Products_Final.csv            Rating_Count     int64      0     553                                        1
-       Products_Final.csv     Discount_Percentage   float64      0    1823                                    19.48
-       Products_Final.csv          Original_Price   float64      0     636                                     3.08
-       Products_Final.csv             Product_Url       str      0    5000 https://www.shein.co.uk/1pc-Retro-Y2K-St
-       Products_Final.csv            Top_Category       str      0      16                      Apparel Accessories
-       Products_Final.csv                In_Stock      bool      0       1                                     True
-       Products_Final.csv                Currency       str      0       1                                      GBP
-       Products_Final.csv          Stock_Quantity     int64      0     500                                      209
-              returns.csv               return_id       str      0    1626                               RET-500208
-              returns.csv                order_id       str      0    1626                                  ORD9004
-              returns.csv         order_detail_id     int64      0    1626                                    16822
-              returns.csv              product_id     int64      0    1363                                     2643
-              returns.csv             shipment_id       str     32    1596                               SHP-106816
-              returns.csv       quantity_returned     int64      0       6                                        1
-              returns.csv           return_reason       str     45      12                               wrong_item
-              returns.csv          item_condition       str     82       3                                      new
-              returns.csv           return_status       str      0      10                                 refunded
-              returns.csv   return_requested_date       str      0    1633                      2024-05-02 03:35:51
-              returns.csv    return_received_date       str    501    1139                      2024-05-04 14:58:43
-              returns.csv           refund_amount       str    762     558                                     1.08
-              returns.csv           refund_method       str    762       3                             store_credit
-              returns.csv              created_at       str      0    1626                      2024-05-02 03:35:51
-              returns.csv              updated_at       str      0    1624                      2024-05-04 14:58:43
-      shipments_india.csv             shipment_id       str      0   25529                               SHP-100001
-      shipments_india.csv                order_id       str      0   25529                                  ORD1001
-      shipments_india.csv                 carrier       str      0       4                               India Post
-      shipments_india.csv         tracking_number       str    528   25001                            TRK3342331444
-      shipments_india.csv         shipping_method       str      0       3                                 standard
-      shipments_india.csv         shipping_status       str      0       4                                delivered
-      shipments_india.csv        origin_warehouse       str      0       5             Bengaluru Fulfillment Center
-      shipments_india.csv        destination_city       str      0       8                                  Chennai
-      shipments_india.csv     destination_country       str      0       1                                    India
-      shipments_india.csv           shipping_cost   float64      0    1772                                     3.84
-      shipments_india.csv            shipped_date       str      0   25527                      2020-10-16 14:02:25
-      shipments_india.csv estimated_delivery_date       str      0   25527                      2020-10-20 14:02:25
-      shipments_india.csv          delivered_date       str   5154   20374                      2020-10-20 23:52:47
-      shipments_india.csv              created_at       str      0   25528                      2020-10-16 04:01:21
-      shipments_india.csv              updated_at       str      0   25528                      2020-10-20 23:52:47
-      shipments_india.csv           delivery_time   float64   5154       9                                      4.0
+                     file               attribute data_type  nulls  unique    min        max  max_length
+  categories_filtered.csv           category_name       str      0    1292                            57
+     category_summary.csv           category_name       str      0    1864                            57
+     category_summary.csv           product_count     int64      0      65      1        420           3
+     category_summary.csv           average_price   float64      0    1075   0.79     469.87           6
+     category_summary.csv           minimum_price   float64      0     845   0.46     398.17           6
+     category_summary.csv           maximum_price   float64      0    1001   0.79     541.57           6
+     category_summary.csv          average_rating   float64    447     113    1.0        5.0           4
+     category_summary.csv           total_reviews     int64      0     704      0      57926           5
+     category_summary.csv        average_discount   float64      0    1212    0.0      74.03           5
+cleaned_customer_data.csv             Customer_ID     int64      0    8829      1       8829           4
+cleaned_customer_data.csv                    Name       str      0    8339                            25
+cleaned_customer_data.csv                  Gender       str      0       3                             7
+cleaned_customer_data.csv                     Age     int64      0      52     18         69           2
+cleaned_customer_data.csv                    City       str      0       7                             9
+cleaned_customer_data.csv             Signup_Date       str      0    1811                            10
+cleaned_customer_data.csv          Feedback_Score   float64      0      10    1.0       10.0           4
+cleaned_customer_data.csv                   Email       str      0    8829                            31
+cleaned_customer_data.csv            Phone_Number     int64      0    8829 920899 9994402181          10
+cleaned_customer_data.csv                 Country       str      0       1                             5
+        order_details.csv         Order_Detail_ID     int64      0   63195      1      63195           5
+        order_details.csv                Order_ID       str      0   30000                             8
+        order_details.csv              Product_ID     int64      0    4991      1       5000           4
+        order_details.csv                Quantity     int64      0       5      1          5           1
+        order_details.csv              Unit_Price   float64      0    1332   0.46     209.68           6
+        order_details.csv             Total_Price   float64      0    3855   0.46     438.35           6
+               orders.csv                Order_ID       str      0   30000                             8
+               orders.csv             Customer_ID     int64      0    6217      3       8827           4
+               orders.csv              Order_Date       str      0   29994                            19
+               orders.csv            Total_Amount   float64      0    7948   0.46     443.55           6
+               orders.csv          Payment_Method       str      0       4                            16
+               orders.csv          Payment_Status       str      0       3                             7
+               orders.csv            Order_Status       str      0       4                             9
+             payments.csv              payment_id       str      0   30000                            10
+             payments.csv                order_id       str      0   30000                             8
+             payments.csv          payment_method       str    608       4                            16
+             payments.csv                  amount   float64      0    7948   0.46     443.55          18
+             payments.csv                currency       str      0       1                             3
+             payments.csv          payment_status       str      0       6                             7
+             payments.csv            payment_date       str      0   29991                            19
+             payments.csv          transaction_id       str      0   30000                            16
+       Products_Final.csv              Product_Id     int64      0    5000      1       5000           4
+       Products_Final.csv            Product_Name       str      0    4774                            40
+       Products_Final.csv     Product_Description       str      0    4998                           870
+       Products_Final.csv           Category_Name       str      0    1292                            57
+       Products_Final.csv                   Price   float64      0    1340   0.46     209.68           6
+       Products_Final.csv                  Rating   float64   2036     124    1.0        5.0           4
+       Products_Final.csv            Rating_Count     int64      0     553      0       1001           4
+       Products_Final.csv     Discount_Percentage   float64      0    1823    0.0       80.0           5
+       Products_Final.csv          Original_Price   float64      0     636   0.98     262.08           6
+       Products_Final.csv             Product_Url       str      0    5000                           891
+       Products_Final.csv            Top_Category       str      0      16                            25
+       Products_Final.csv                In_Stock      bool      0       1                             4
+       Products_Final.csv                Currency       str      0       1                             3
+       Products_Final.csv          Stock_Quantity     int64      0     500      1        500           3
+              returns.csv               return_id       str      0    1626                            10
+              returns.csv                order_id       str      0    1626                             8
+              returns.csv         order_detail_id     int64      0    1626     82      62999           5
+              returns.csv              product_id     int64      0    1363      4       4997           4
+              returns.csv             shipment_id       str     32    1596                            10
+              returns.csv       quantity_returned     int64      0       6      0          5           1
+              returns.csv           return_reason       str     45      12                            16
+              returns.csv          item_condition       str     82       3                             7
+              returns.csv           return_status       str      0      10                             9
+              returns.csv   return_requested_date       str      0    1633                            19
+              returns.csv    return_received_date       str    501    1139                            19
+              returns.csv           refund_amount       str    762     558                             6
+              returns.csv           refund_method       str    762       3                            16
+              returns.csv              created_at       str      0    1626                            19
+              returns.csv              updated_at       str      0    1624                            19
+      shipments_india.csv             shipment_id       str      0   25529                            10
+      shipments_india.csv                order_id       str      0   25529                             8
+      shipments_india.csv                 carrier       str      0       4                            10
+      shipments_india.csv         tracking_number       str    528   25001                            13
+      shipments_india.csv         shipping_method       str      0       3                             8
+      shipments_india.csv         shipping_status       str      0       4                            16
+      shipments_india.csv        origin_warehouse       str      0       5                            28
+      shipments_india.csv        destination_city       str      0       8                             9
+      shipments_india.csv     destination_country       str      0       1                             5
+      shipments_india.csv           shipping_cost   float64      0    1772    0.1     106.25           6
+      shipments_india.csv            shipped_date       str      0   25527                            19
+      shipments_india.csv estimated_delivery_date       str      0   25527                            19
+      shipments_india.csv          delivered_date       str   5154   20374                            19
+      shipments_india.csv              created_at       str      0   25528                            19
+      shipments_india.csv              updated_at       str      0   25528                            19
+      shipments_india.csv           delivery_time   float64   5154       9    0.0        8.0           3
